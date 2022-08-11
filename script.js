@@ -45,6 +45,9 @@ function createCloseBtn() {
   closeBtn.classList.add('close-btn');
   closeBtn.type = 'button';
   document.querySelector('header').appendChild(closeBtn);
+  closeBtn.addEventListener('click', () => {
+    closeBtn.remove('closeMenu');
+  });
 }
 
 function openMenu() {
